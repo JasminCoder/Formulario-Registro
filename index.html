@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <h2>Formulario de registro</h2>
+
+    <form action="/action">
+        <div>
+            <label for="input_texto">Nombre *</label>
+            <input type="text" name="input_texto" id="input_texto"> 
+        </div>
+        <br>
+
+        <div>
+            <label for="input_texto">Apellido *</label>
+            <input type="text" name="input_texto" id="input_apellido"> 
+        </div>   
+        <br>
+
+        <div>
+            <label for="input_texto">Email *</label>
+            <input type="text" name="input_texto" id="input_email"> 
+        </div>
+        <br>
+
+        <div>
+            <label for="input_contra">Contraseña *</label>
+            <input type="password" name="input_contra" id="input_contra">
+        </div>
+        <br>
+
+        <div>
+            <label for="input_contra">Confirmar Contraseña *</label>
+            <input type="password" name="input_contra" id="input_confirmar">
+        </div>
+        <br>
+
+        <div>
+            <label for="input_fecha">Cumpleaños</label>
+            <input type="date" name="input_fecha" id="input_fecha">
+        </div>
+        <br>
+
+        <div>
+            <label for="input_texto">Identidad de genero</label>
+            <br>
+            <input type="radio" name="identidad genero" value="masculino" id="input_masculino" >
+            <label for="input_masculino">Masculino</label>
+
+            <input type="radio" name="identidad genero" value="femenino" id="input_femenino">
+            <label for="input_femenino">Femenino</label>
+
+            <input type="radio" name="identidad genero" value="noBinario" id="input_noBinario">
+            <label for="input_noBinario">No binario</label>
+
+            <input type="radio" name="identidad genero" value="omitir" id="input_omitir">
+            <label for="input_omitir">Omitir</label>
+        </div>
+        <br>
+        
+        <div>
+            <label for="input_textarea">Pequeña descripción sobre mi:</label>
+            <br>
+            <textarea id="input_textarea" name="comentario" cols="20" rows="3"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="input_fecha">Lenguaje favorito</label>
+            <select name="lenguaje favorito">
+                <option>JavaSript</option>
+                <option>Python</option>
+                <option>Java</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="aceptar email" id="input_edad">
+            <label for="input_edad">Acepto recibir información por email</label>    
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Crear cuenta"> <!--crea un boton-->
+        </div>
+        <br>
+        <span>* Campos obligatorios</span>
+
+    </form>
+</body>
+</html>
